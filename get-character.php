@@ -1,15 +1,12 @@
 <?php
 	if ($_GET['method']==="session"){ session_start(); }
-	include_once("./inc/analyticstracking.php");
+	include_once("/inc/analyticstracking.php");
 ?>
-
-<link rel="stylesheet" type="text/css" href="./inc/habitrpg.css">
-<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
 <?php
+
 	//Set your image directory. This makes it easier for people who deploy this on their own server and don't want to follow the same file structure
 	//Set this to the folder that will contain the spritesmith and backer-only folders
-	$imagedir = './img/sprites';
+	$imagedir = '/img/sprites';
 
 	//Checks to see if the user id and api key are set in the url, if not, uses the onse in the included file
 	//Make sure to set the included files permissions to read and write only for the user (600)
@@ -21,7 +18,7 @@
 		$api_key = $_SESSION['api_key'];
 		unset($_SESSION['api_user'], $_SESSION['api_key']);
 	} else {
-		include './inc/habitrpg-api.php';
+		include '/inc/habitrpg-api.php';
 	}
 	
 	//Set $ch to the curl request required by the api
