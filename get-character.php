@@ -1,12 +1,8 @@
 <?php
-	if ($_GET['method']==="session"){ session_start(); }
-	include_once("/inc/analyticstracking.php");
-?>
-<?php
 
 	//Set your image directory. This makes it easier for people who deploy this on their own server and don't want to follow the same file structure
 	//Set this to the folder that will contain the spritesmith and backer-only folders
-	$imagedir = '/img/sprites';
+	$imagedir = '/img/habitrpg';
 
 	//Checks to see if the user id and api key are set in the url, if not, uses the onse in the included file
 	//Make sure to set the included files permissions to read and write only for the user (600)
@@ -203,5 +199,5 @@
 </div>
 <?php
 	//Unset the arrays				
-	unset($preferences, $stats, $items, $user, $api_user, $api_key);
+	unset($preferences, $stats, $items, $user);
 ?>
