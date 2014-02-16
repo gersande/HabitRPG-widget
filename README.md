@@ -10,4 +10,5 @@ This project was designed to be used as a widget on your website to show your [H
 The future! 
 ======
 
-* Turn this into a Wordpress Plugin and make it properly Widget compatible (right now this code has a dependency on another plugin for it to work, which sucks. I need to figure out how to run this code without needing that other plugin).
+* Turn this into a Wordpress Plugin (right now this code has a dependency on another plugin for it to work, which sucks. I need to figure out how to run this code without needing that other plugin).
+* Fix the problem where the widget refuses to display more than once. 
