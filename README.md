@@ -1,33 +1,13 @@
-HabitRPG-widget
+HabitRPG Widget for Wordpress
 ======
 
-This project was designed to be used as a widget on your website to show your [HabitRPG](https://habitrpg.com) character and some stats on your own personal website. It can be used two different ways which are explained below.
+This project was designed to be used as a widget on your website to show your [HabitRPG](https://habitrpg.com) character and some stats on your own personal website. 
 
-Running on your own server
-------
+* [Official Page ](http://gersande.github.io/HabitRPG-widget/)
+* [Installation instructions by Gersande for this repository](http://gersande.com/display-habitrpg-as-a-user-badge-not-the-whole-rpg-on-a-wordpress-site-on-your-own-server/)
+* [Original installation instructions, also has instructions for how to create iframes with this code](https://github.com/pipcorona/HabitRPG-widget)
 
-To run this on your own server you will need the following files:
+The future! 
+======
 
-* get-character.php
-* habitrpg.css (inside inc folder)
-* habitrpg-api.php (inside inc folder)
-* habitrpg and its contents in the img folder
-
-After placing all the files where they belong, edit the habitrpg-api.php file to have your api key and user id for the appropriate variables. Then chmod the file to have read and write for user only (600) to keep those keys secure.
-
-Wherever you want the widget to show up, use a php include and include get-character.php.
-
-You also might need to edit the include or image paths if you don't have the files placed in the "inc" or "img" folder.
-
-Running through an iframe
-------
-
-This method has two options. If you don't want to host all the files on your server you can accomplish this two ways.
-
-###Method 1
-
-Place the habitrpg-api.php file in your inc folder. Edit it to have you api key and user id and then chmod the file to read and write for user only (600) to keep those secure. Then grab the php include code from index.html between the method 1 tags. Place that at the very top of your webpage, even above the html tag. Then place the iframe code between the method one tags where you want it on your webpage. This will place an iframe that will display your info.
-
-###Method 2
-
-This method is the least secure but the only method I've been able to think of if you have a site where you want to display this but can't upload files (like blogger or something similar). In this one you copy the code from index.html between the method 2 tags and paste it where you want it. Then you have to replace PUT\_USER\_ID\_HERE and PUT\_API\_KEY\_HERE with your user id and api key. The reason this isn't secure is because those would be visible in the html source so someone could use that and then access your account through the API.
+* Turn this into a Wordpress Plugin and make it properly Widget compatible (right now this code has a dependency on another plugin for it to work, which sucks. I need to figure out how to run this code without needing that other plugin).
