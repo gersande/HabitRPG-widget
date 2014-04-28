@@ -4,13 +4,13 @@ a.habitrpg {
 	font-family: 'Lato', sans-serif;
 }
 
-#container {
+#container-rpg {
 	position: relative;
 	width: 134px;
 	border: 1px solid #A7C5CB;
 }
 
-#wrapper {
+#wrapper-rpg {
 	margin: 0 auto;
 	width: 132px;
 	background-color: #D0E0E3;
@@ -18,21 +18,21 @@ a.habitrpg {
 	overflow: hidden;
 }
 
-.text {
+.text-rpg {
 	text-align: center;
 	width: 100%;
 	margin-bottom: 8px;
 	font-family: 'Lato', sans-serif;
 }
 
-#character {
+#character-rpg {
 	position: relative;
 	width: 132px;
 	height: 143px;
 	margin: 0 auto;
 	}
 
-.base {
+.base-rpg {
 	position: absolute;
 	top: 19px;
 	left: 25px;
@@ -76,7 +76,7 @@ a.habitrpg {
 	z-index: 30;
 }
 
-.item {
+.item-rpg {
 	position: absolute;
 	top: 19px;
 	left: 25px;
